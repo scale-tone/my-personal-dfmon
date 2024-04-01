@@ -26,5 +26,10 @@ jobs:
         projectFolder: ${{ github.workspace }}/custom-backends/dotnet7isolated
         outputFile: my-function-graph.htm
         doNotRenderFunctions: false
-        doNotRenderProxies: false      
+        doNotRenderProxies: false
+
+    - uses: actions/upload-artifact@v4.3.1
+      with:
+        path: my-function-graph.htm
+        
       
